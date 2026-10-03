@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<title>Glow Studio – Salon & Spa</title>
+<link href="https://fonts.googleapis.com/css2?family=Gloock&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+<nav><b>Glow Studio</b><div><a href="#services">Services</a><a href="#offers">Offers</a><a href="#gallery">Gallery</a><a href="#reviews">Reviews</a><a href="#book">Book</a></div></nav>
+<header class="hero">
+<div>
+<h1>Skin, hair and a quiet hour for yourself.</h1>
+<p>Book facials, hair, bridal and spa treatments online. You get a WhatsApp confirmation and a reminder before your visit.</p>
+<div class="actions"><a class="btn" href="#book">Book appointment</a><a class="btn alt" href="#services">See prices</a></div>
+</div>
+<div class="arch">Open daily, 10 am to 8 pm</div>
+</header>
+</div>
+
+<section id="services"><div class="wrap">
+<h2>Services and prices</h2>
+<p class="sub">Choose a category, then pick a service in the booking form.</p>
+<div class="tabs" id="tabs" role="group" aria-label="Service categories"></div>
+<div class="list" id="svc"></div>
+</div></section>
+
+<section id="offers"><div class="wrap">
+<h2>Packages and offers</h2>
+<p class="sub">Save on bundles. Loyalty members also get birthday and anniversary treats.</p>
+<div class="pk">
+<div><h3>Bridal glow</h3><p>Trial makeup, facial, mehendi prep and hair styling on the day.</p><span class="off">₹9,999 (save 20%)</span></div>
+<div><h3>Monthly refresh</h3><p>Haircut, cleanup and manicure once a month for three months.</p><span class="off">₹3,499 (save 15%)</span></div>
+<div><h3>Birthday week</h3><p>10% off any service during the week of your birthday. We message you automatically.</p><span class="off">Free for members</span></div>
+</div>
+</div></section>
+
+<section id="gallery"><div class="wrap">
+<h2>Our work</h2>
+<p class="sub">Replace the files in assets/ with your own photos.</p>
+<div class="gal" id="gal"></div>
+</div></section>
+
+<section id="team"><div class="wrap">
+<h2>Our team</h2>
+<p class="sub">Each stylist has their own schedule. Booked times are blocked automatically.</p>
+<div class="staff" id="staff"></div>
+</div></section>
+
+<section id="reviews"><div class="wrap">
+<h2>What clients say</h2>
+<p class="sub">&nbsp;</p>
+<div class="rev">
+<blockquote><span class="stars">★★★★★</span><p>Best facial I've had in years. Reminder on WhatsApp meant I never missed a slot.</p><cite>Ananya S.</cite></blockquote>
+<blockquote><span class="stars">★★★★★</span><p>Did my full bridal look. Calm, on time and exactly what I asked for.</p><cite>Ritika D.</cite></blockquote>
+<blockquote><span class="stars">★★★★☆</span><p>Lovely haircut and easy online booking. Would like later evening slots.</p><cite>Meera K.</cite></blockquote>
+</div>
+</div></section>
+
+<section id="book"><div class="wrap">
+<h2>Book your appointment</h2>
+<p class="sub">We send the details to our WhatsApp to confirm your slot.</p>
+<form class="book" id="f" onsubmit="return false">
+<label>Service<select id="s"></select></label>
+<div class="two">
+<label>Stylist<select id="st"></select></label>
+<label>Date<input type="date" id="d"></label>
+</div>
+<div><b style="font-size:.95rem">Time</b><div class="slots" id="slots" role="group" aria-label="Available times"></div></div>
+<div class="two">
+<label>Your name<input id="n" autocomplete="name"></label>
+<label>WhatsApp number<input id="p" type="tel" inputmode="tel" autocomplete="tel" placeholder="98765 43210"></label>
+</div>
+<label style="display:flex;gap:10px;align-items:center;font-weight:400"><input type="checkbox" id="l" style="width:auto"> Join loyalty club for birthday and anniversary offers</label>
+<button class="btn" id="go" type="button">Confirm on WhatsApp</button>
+<div class="msg" id="m" role="status"></div>
+</form>
+</div></section>
+
+<footer><div class="wrap">Glow Studio · Edit the SALON object in the script to set your name, WhatsApp number, services and staff.</div></footer>
+
+<script src="script.js"></script>
+</body>
+</html>
